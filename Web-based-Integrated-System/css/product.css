@@ -1,0 +1,121 @@
+body {
+    background-color: #fff;
+  }
+
+  .product_grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+}
+
+.product_card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Set a fixed height for the product card */}
+
+.product_image {
+    width: 100%;
+    height: 300px; /* Set a fixed height for images */
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    border-radius: 5px;
+}
+
+.product_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product_price {
+    font-size: 16px;
+    color: #FF5733;
+    margin-top: 5px;
+}
+
+.product_description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.add_to_cart_button {
+    background-color: #e9e9e9;
+    color: #0077ed;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add_to_cart_button:hover {
+    background-color: #45a049;
+}
+
+.empty-product-list{
+    font-weight: 700;
+    font-size: 4vw;
+    text-align: center;
+    height: 25vw;
+    margin: 0 10vw;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filter-button {
+    padding: 0.5vw 1vw;
+    color: #0077ed;
+    background-color: #fff;
+    font-size: 1vw;
+    border-radius: 20px;
+    margin: 10px 0.5vw;
+    transition: .2s;
+    outline: none;
+    border: 1.5px solid #0077ed;
+}
+.filter-button.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+.filter-bar {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.filters-section {
+    display: none;
+}

@@ -1,0 +1,213 @@
+/* Product View Section */
+.product-view-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 0 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 98%;
+    height: 80%;
+}
+
+.product-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between; /* Spreads content across the container */
+    text-align: left;
+    width: 100%; /* Ensures full width of content */
+}
+
+/* Left side: Images and Videos */
+.image_video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50%;
+    /* Aligns the images and videos to the left side */
+}
+
+.product {
+    margin-right: 100px;
+    height: 50%;
+    /* Spacing for product container */
+}
+
+/* Right side: Product Details */
+.product-info {
+    flex-grow: 1;
+    margin-left: 150px;
+    margin-top: 150px;
+    font-size: 25px;
+    /* Added margin to separate from images/videos */
+}
+
+.product-info h1 {
+    font-size: 45px;
+    margin: 80px 0; 
+    /* Adjust margin for the product header */
+}
+
+.product-detail {
+    margin: 50px 0 100px; 
+    
+    /* Spacing for product details */
+}
+
+.product-detail p {
+    margin: 5px 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* General Status Styles */
+.product-status {
+    padding: 10px 0 10px 50px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 100px;
+}
+
+.product-status.active {
+    font-size: 25px;
+    color: green;
+    font-weight: bold;
+    
+}
+
+.product-status.blocked {
+    color: rgb(218, 31, 31);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Center the product-statistics container */
+.product-statistics {
+    display: flex;
+    justify-content: center; /* Center the statistics horizontally */
+    gap: 200px; /* Adds spacing between the stat boxes */
+    margin-top: 20px;
+}
+
+.stat-box {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 20%; /* Fixed width for each stat-box */
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    
+}
+
+.stat-box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: #333;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.stat-box h3 {
+    font-size: 28px;
+    margin: 0;
+    color: #4A5A6A;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* Adjusts to the width of the images or videos */
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Hide all slides (images or videos) by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation for slideshow */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Next and previous buttons for the slideshow */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover effect on next/prev buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slide counter styling */
+.slide-counter {
+    text-align: center;
+    margin-left: 120px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 900;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Adjust slideshow styling */
+.photo-section, .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photoSlides, .videoSlides {
+    display: block;
+    margin-bottom: 10px;
+    /* Ensure spacing between items */
+}
+
+.slide-counter {
+    text-align: left;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,132 @@
+
+.order-statistics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.stat-box {
+    width: 220px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.stat-box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.stat-box h3 {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+/* Container for the status filter */
+.status-filter {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    gap: 15px; /* Space between the filter links */
+    margin-bottom: 20px; /* Space below the filter */
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* Separator */
+    background-color: #f9f9f9;
+    padding-left: 10px; /* Padding on the left */
+}
+
+/* Style for each filter link */
+.status-filter a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #007bff; /* Default color */
+    padding: 8px 15px; /* Padding for clickable area */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0;
+}
+
+/* Hover effect */
+.status-filter a:hover {
+    background-color: #e7f3ff;
+    color: #0056b3;
+}
+
+/* Active filter style */
+.status-filter a.active {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: default; /* Disabled cursor for active */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .status-filter {
+        flex-direction: column; /* Stack filters vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .status-filter a {
+        margin-bottom: 10px;
+        width: 100%; /* Make the filter links full-width on small screens */
+    }
+}
+
+
+/* Table Styling */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.status.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status.request {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status.approved {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.declined {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status.shipping {
+    background-color: #616df8;
+    color: #021854;
+}

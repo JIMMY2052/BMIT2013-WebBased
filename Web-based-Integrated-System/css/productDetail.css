@@ -1,0 +1,181 @@
+/* Styles for the main container with flexbox layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    gap: 20px; /* Adds spacing between the media and product info sections */
+    height: 100%;
+}
+
+/* Media section (for images and videos) */
+.main-media {
+    width: calc(100% - 384px);
+    height: 100%;
+}
+
+.main-media-display {
+    width: 100%; /* Ensure the image or video takes the full width of the media section */
+
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.card_link{
+    display: block;
+    text-decoration: none; /* Remove the underline from the entire card link */
+    color: inherit; /* Inherit text color */
+}
+
+
+/* Thumbnail row */
+.thumbnail-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    aspect-ratio: 16 / 9;
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Product info section */
+.product-info {
+    flex: 1; /* Takes up the remaining space for the product info on the right */
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 1px solid #e0e0e0; /* Optional: Adds a border between media and details */
+    height: 100%;
+}
+
+.product-info h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Price styling */
+.product-info .price {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+
+.product_detail_button{
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    border-radius: 20px;
+    margin: 10px 0.5vw;
+    transition: .2s;
+    outline: none;
+    border: 1.5px solid #0077ed;
+}
+
+.product_detail_button.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Background Blue Text White */
+.original_color{
+    color: #fff;
+    background-color: #0077ed;
+}
+/* Text Blue Background White */
+.reverse_color{
+    color: #0077ed;
+    background-color: #fff;
+}
+
+.width_100{
+    width: 100%;
+}
+
+.height_disable{
+    height: auto;
+    width: auto;
+}
+
+/* Add to Cart and Wishlist buttons */
+
+.product_detail_button:hover{
+    background-color: #0077ed;
+    color: #fff;
+}
+
+.brighten:hover {
+    filter: brightness(110%);
+}
+
+.game_details_button{
+    color: #0077ed;
+    background-color: #fff;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    border-radius: 20px;
+    margin: 10px 0.5vw;
+    transition: .2s;
+    outline: none;
+    border: 1.5px solid #0077ed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-media, .product-info {
+        width: 100%; /* Media and product info take full width on small screens */
+        text-align: center;
+    }
+
+    .main-media-display {
+        max-width: 100%;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+
+    .add_to_cart_button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.game_title{
+    width: 100%;
+}
+
+.weight300{
+    font-weight: 300;
+}
+
+.margin20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+

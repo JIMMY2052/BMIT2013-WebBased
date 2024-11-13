@@ -1,0 +1,141 @@
+/* Ensure the View and Dropdown icons are side by side */
+.action-buttons-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Ensure that the product-action-buttons container is relatively positioned */
+.product-action-buttons {
+    position: relative;
+}
+
+/* Style the dropdown menu */
+.product-action-buttons .product-action-menu {
+    position: absolute;
+    top: 30px; /* Adjust to be directly under the dropdown button */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+    list-style: none;
+    width: 120px;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Show the dropdown menu when toggled */
+.product-action-buttons.active .product-action-menu {
+    display: block;
+}
+
+/* Dropdown button */
+.action-dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Style individual dropdown items */
+.product-action-menu li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.product-action-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.product-action-menu li a {
+    text-decoration: none;
+    color: #000; /* Optional: Set a default text color */
+    display: flex;
+    align-items: center;
+}
+
+.product-action-menu li a:hover {
+    color: #007bff; /* Optional: Change color on hover */
+}
+
+/* Additional styling to ensure the text aligns nicely with the icons */
+.product-action-menu li a img {
+    margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+
+/* Search Form Container */
+.form-container-product {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+  }
+  
+  .form-container-product input {
+    padding: 10px 10px 10px 12px;
+    width: 272px;
+    border: 2px solid rgb(180, 179, 179);
+    border-radius: 5px;
+}
+.form-container-product p {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  /* Styling for the action buttons container */
+.product-edit-btn, .product-delete-btn {
+    display: inline-block;
+    background-color: #fff; /* Background color for the buttons */
+    border: none; /* Remove default border */
+    padding: 5px 10px; /* Adjust padding for better spacing */
+    margin-right: 10px; /* Add margin between buttons */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Add hover effect */
+.product-edit-btn:hover, .product-delete-btn:hover {
+    background-color: #f0f0f0; /* Lighter background on hover */
+}
+
+/* Align the edit and delete icons properly */
+.product-edit-btn img, .product-delete-btn img {
+    width: 16px; /* Adjust icon size */
+    height: 16px;
+    vertical-align: middle; /* Align icons with text */
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Separate the action buttons for better spacing */
+.product-edit-btn {
+    color: #4CAF50; /* Edit button color */
+}
+
+.product-delete-btn {
+    color: #F44336; /* Delete button color */
+}
+
+/* Customize delete confirmation dialog */
+form.product-delete-form {
+    display: inline-block; /* To keep forms inline */
+}
+
+/* Overall button container styling */
+.actions {
+    text-align: center; /* Center align actions */
+}
+
+.product-edit-form button{
+    width: 120px;
+    height: 50px;
+    margin: 0;
+    padding-right: 50px;
+
+}
+.product-delete-form button{
+    width: 120px;
+    height: 50px;
+    margin: 0;
+
+}

@@ -1,0 +1,107 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h4{
+    color:black;
+}
+
+.order-info-box > p, .customer-info-box > p {
+    color: grey;
+}
+
+.order-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order-info-box, .customer-info-box{
+    width: 45%;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.address-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+ .shipping-address {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.order-items-section {
+    margin-top: 20px;
+}
+
+.orderTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.theadTable {
+    background-color: #f0f0f0;
+}
+
+.orderTable th, .orderTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.orderTable th {
+    text-align: left;
+}
+
+.order-items-section h4 {
+    margin-bottom: 10px;
+}
+
+.status-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.status-section form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.status-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.update-button {
+    background-color: #5e63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-button:hover {
+    background-color: black;
+}
+
+
